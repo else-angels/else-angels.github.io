@@ -1,0 +1,21 @@
+nav {
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+		li {
+			a {
+				padding: .25em 1em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: .25em;
+				&:hover {
+					background-color: hsl(var(--hue2), var(--sat), 25%);
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+#app {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas: "header" "nav" "main" "footer";
+
+	> header, > footer {
+		background-color: hsl(var(--hue), var(--sat), var(--lum));
+		padding: 1em;
+		color: #333;
+	}
+	> header {
+		justify-content: space-between;
+		grid-area: header;
+		display: grid;
+		svg {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		h2 {
+			grid-row: 2;
+			font-size: 1em;
+		}
+		nav {
+			grid-column: 2;
+			grid-row: 1;
+			font-size: smaller;
+			ul {
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+	}
+	> footer {
+		grid-area: footer;
+		padding: .5em 1em;
+		text-align: center;
+	}
+}
