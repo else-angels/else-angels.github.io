@@ -29,6 +29,22 @@
 				flex-direction: column;
 				justify-content: space-between;
 			}
+			a {
+				justify-content: end;
+				gap: .5em;
+				padding: .1em .5em;
+				text-align: right;
+				flex-direction: row-reverse;
+			}
+			a:hover img {
+				filter: invert(100%);
+			}
+			img {
+				width: 1.25em;
+				height: 1.25em;
+				object-fit: contain;
+				object-position: center;
+			}
 		}
 	}
 	> footer {

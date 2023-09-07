@@ -3,10 +3,10 @@
     <Signature width="500" />
     <nav class="nav-media">
       <ul>
-        <li><a href="">Github</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
+        <li><a href=""><img src="@/assets/networks/github_black.svg" style="height:1.5em"> Github</a></li>
+        <li><a href=""><img src="@/assets/networks/facebook_black.svg" style="height:1.5em">Facebook</a></li>
+        <li><a href=""><img src="@/assets/networks/instagram_black.svg" style="height:1.5em">Instagram</a></li>
+        <li><a href=""><img src="@/assets/networks/youtube_black.svg" style="height:1.5em">Youtube</a></li>
       </ul>
     </nav>
   </header>
