@@ -3,6 +3,7 @@ nav {
 		list-style: none;
 		display: flex;
 		justify-content: space-evenly;
+
 		li {
 			a {
 				padding: .25em .5em;
@@ -10,10 +11,63 @@ nav {
 				align-items: center;
 				justify-content: center;
 				text-align: center;
-				border-radius: .25em;
+			}
+		}
+	}
+	.off {
+		opacity: .5;
+		pointer-events: none;
+	}
+}
+
+#nav-media {
+	a {
+		border-radius: .25em;
+		&:hover {
+			background-color: hsl(var(--hue2), var(--sat), 25%);
+			color: #fff;
+		}
+	}
+	img {
+		height:1.5em
+	}
+}
+
+
+
+#nav-principal {
+	background-color: hsl(var(--hue2), var(--sat), 25%);
+	display: flex;
+	ul {
+		--gap: 0em;
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		padding: 0 var(--gap);
+		gap: var(--gap);
+
+		li {
+			flex-grow: 1;
+
+			a {
+				padding: .5em 1em;
+				border-radius: none;
+				transition-property: background-position-y, color;
+				transition-duration: .25s;
+				transition-timing-function: ease-out;
+
+				background-image: linear-gradient(to top,
+						hsla(var(--hue), var(--sat), var(--lum), 0),
+						hsla(var(--hue), var(--sat), var(--lum), 0),
+						hsla(var(--hue), var(--sat), var(--lum), 1),
+						hsla(var(--hue), var(--sat), var(--lum), 1));
+				background-size: 100% 300%;
+				transition-delay: .2s;
+				background-position-y: 100%;
+
 				&:hover {
-					background-color: hsl(var(--hue2), var(--sat), 25%);
-					color: #fff;
+					transition-delay: 0s;
+					background-position-y: 0%;
+					color: #333;
 				}
 			}
 		}

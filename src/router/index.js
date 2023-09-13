@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IndexPage from '../pages/Index.vue'
+import PageIndex from '../pages/Index.vue'
+import PageConstruction from '../pages/Construction.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +8,32 @@ const router = createRouter({
     {
       path: '/',
       name: 'index',
-      component: IndexPage
+      component: PageIndex
+    },
+    {
+      path: '/projets',
+      name: 'projets',
+      component: PageConstruction
+    },
+    {
+      path: '/equipe',
+      name: 'equipe',
+      component: PageConstruction
+    },
+    {
+      path: '/tech',
+      name: 'tech',
+      component: PageConstruction
+    },
+    {
+      path: '/archives',
+      name: 'archives',
+      component: PageConstruction
+    },
+    {
+      path: '/joindre',
+      name: 'joindre',
+      component: PageConstruction
     },
     // {
     //   path: '/about',
