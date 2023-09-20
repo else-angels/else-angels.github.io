@@ -3,6 +3,9 @@
 		<h1 style="text-align: center;">Else-Angels : <i>Des projets pour les intrépides</i></h1>
 		<div class="cards">
 			<article class="card">
+				<iframe src="https://else-angels.github.io/glissade" frameborder="0" width="512" height="512"></iframe>
+			</article>
+			<article class="card">
 				<figure>
 					<img src="@/assets/img/projet_fictif1.webp" alt="">
 				</figure>
